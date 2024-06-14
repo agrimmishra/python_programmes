@@ -1,5 +1,5 @@
 import math
-
+define pi = 
 shape = input("enter the shapes name :")
 if shape == "rectangle" or shape == "square":
     height = int(input("enter the height :"))
@@ -14,7 +14,7 @@ elif shape == "triangle":
 elif shape == "circle":
     radius = int(input("enter the radius :"))
     area = math.pi * (radius**2)
-    print(area)
+    print("%.2f" %area)
 elif shape == "":
     print("fill the shape name feild")
 else:
