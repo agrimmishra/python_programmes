@@ -1,0 +1,11 @@
+{
+    "debug.terminal.clearBeforeReusing": false,
+    "terminal.integrated.cursorBlinking": true,
+    "files.autoSave": "afterDelay",
+    "cmake.clearOutputBeforeBuild": false,
+    "editor.inlayHints.fontFamily": " \"Arimo\", sans-serif;",
+    "editor.experimentalInlineEdit.fontFamily": "\"Arimo\", sans-serif;",
+    "editor.fontFamily": "\"Arimo\", sans-serif;",
+    "editor.codeLensFontFamily": " \"Arimo\", sans-serif;",
+    "editor.fontLigatures": true
+}
