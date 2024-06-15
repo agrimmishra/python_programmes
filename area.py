@@ -1,5 +1,5 @@
 import math
-define pi = 
+
 shape = input("enter the shapes name :")
 if shape == "rectangle" or shape == "square":
     height = int(input("enter the height :"))
