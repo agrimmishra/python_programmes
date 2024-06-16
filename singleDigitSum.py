@@ -6,10 +6,11 @@ def sumNum(a):
         sum+=rem
         number//=10
     new = sum
+  
     if(new>10):
-        sumNum(new)
+       sumNum(new)
     else:
-     print(new)
+       print(new)
     
     
 num = int(input("enter number:"))
