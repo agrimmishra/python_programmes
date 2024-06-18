@@ -14,7 +14,7 @@ elif shape == "triangle":
 elif shape == "circle":
     radius = float(input("enter the radius :"))
     area = math.pi * (radius**2)
-    print("%.3f" %area)
+    print("%.3f" %area,"sq unit")
 elif shape == "":
     print("fill the shape name feild")
 else:
