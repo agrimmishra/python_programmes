@@ -1,4 +1,5 @@
 import random as ran
+
 def usernameGen(name):
     uniqCode = str(round(ran.random()*100))
     print("user username could be : "+ name+uniqCode)
