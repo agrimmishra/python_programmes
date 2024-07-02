@@ -1,16 +1,16 @@
-def sumNum(a):
-    number = a
+def sumNum(givenNum):
+    number = givenNum
     sum=0
     while number>0:
         rem = number%10
         sum+=rem
         number//=10
-    new = sum
+        newNum= sum
   
-    if(new>10):
-       sumNum(new)
+    if(newNum>10):
+       sumNum(newNum)
     else:
-       print(new)
+       print(newNum)
     
     
 num = int(input("enter number:"))
