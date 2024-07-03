@@ -7,7 +7,7 @@ def sumNum(givenNum):
         number//=10
         newNum= sum
   
-    if(newNum>10):
+    if(newNum>=10):
        sumNum(newNum)
     else:
        print(newNum)
