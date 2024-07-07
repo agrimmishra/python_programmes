@@ -1,6 +1,10 @@
-num = int(input("enter a number :"))
-fact = 1
-while num != 0:
-    fact*=num
-    num-=1
-print(fact)
+def  factFinder(num):
+    if num == 1 or num ==0:
+        num =1
+        return num
+    else:
+       num = num*factFinder(num-1)
+       return num
+    
+
+print(factFinder(10))
