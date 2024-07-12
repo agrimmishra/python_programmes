@@ -3,8 +3,8 @@ def  factFinder(num):
         num =1
         return num
     else:
-       num = num*factFinder(num-1)
-       return num
+        num = num*factFinder(num-1)
+        return num
     
 
-print(factFinder(10))
+print(factFinder(45))
