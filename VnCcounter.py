@@ -32,5 +32,5 @@ def VnCcounter(str):
     print(f"{v_count} vowels and {c_count} consonants")
 
 #Driver Function
-name = input("Enter your name: ")
+name = input("Enter your string: ")
 VnCcounter(name)
