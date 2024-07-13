@@ -14,7 +14,7 @@ def VnCcounter(str):
     """
     v_count = 0
     c_count = 0
-    vowels = ["a", "e", "i", "o", "u"]
+    vowels = tuple(("a", "e", "i", "o", "u"))
 
     # Check if the string is empty or contains only spaces
     if str.strip() == "":
