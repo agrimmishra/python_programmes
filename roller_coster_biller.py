@@ -17,5 +17,5 @@ else:
         bill = ticketPrice + photoPrice
         print(f"bill details\n your name is : {name}\n your ticket price is : ${ticketPrice}\n photo charge : ${photoPrice}\n your final bill is : ${bill}")
     else:
-      bill= ticketPrice
+        bill= ticketPrice
     print(f"bill details\n your name is : {name}\n your ticket price is : ${ticketPrice}\n your final bill is : ${bill}")

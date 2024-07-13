@@ -9,8 +9,8 @@ if checker >0:                                                                  
     x2 = ( (-1*b) + (checker**(1/2)))/(2*a)
     print(x1,x2)
 elif checker ==0 :                                                                        # condition  for equal roots 
-     print("the equation has real equal roots :")
-     x1 = ( (-1*b) - (checker**(1/2)))/(2*a)
-     print(x1)
+    print("the equation has real equal roots :")
+    x1 = ( (-1*b) - (checker**(1/2)))/(2*a)
+    print(x1)
 else :
     print("equation has imaginary roots")
