@@ -28,13 +28,6 @@ def show_list():
     Display all tasks in the to-do list.
     """
     if toDoList:
-<<<<<<< HEAD
-        print("\nTasks to be done:")
-=======
-        printines()
-        print("Tasks to be done:")
-        printines()
->>>>>>> 1d6930eeb14137f574fa8b9b2db34fae73adb8e3
         for i, task in enumerate(toDoList, 1):
             print(f"{i}. {task}")
     else:
