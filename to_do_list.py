@@ -10,13 +10,6 @@ def menuPrinter():
     
     print(menu)
     
-<<<<<<< HEAD
-
-=======
-def printines():
-    for i in range(10):
-        print("-",end="")
->>>>>>> 1d6930eeb14137f574fa8b9b2db34fae73adb8e3
 
 # Initialize an empty to-do list
 toDoList = []
