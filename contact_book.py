@@ -16,7 +16,7 @@ def add_contact():
     """
     name = input("Enter the contact's name: ")
     phone = input("Enter the contact's phone number: ")
-    email = input("Enter the contact's email address: ")
+    email = input("Enter the contact's email address: ") 
     contact_book[name] = {"phone": phone, "email": email}
     print(f"{name} added successfully.")
 
@@ -44,12 +44,16 @@ def delete_contact():
     """
     Delete a contact from the contact book by name.
     """
-    name = input("Enter the name of the contact to delete: ")
-    if name in contact_book:
-        del contact_book[name]
-        print(f"{name} deleted successfully.")
+    if contact_book:
+            name = input("Enter the name of the contact to delete: ")
+            confirm = input(f"are you sure you want to delete {name} ? type y for yes or n for no :").lower()
+            if confirm == "y" and name in contact_book:
+                del contact_book[name]
+                print(f"{name} deleted successfully.")
+            else:
+                print(f"No contact found with name: {name}")
     else:
-        print(f"No contact found with name: {name}")
+        print("your contact book empty")
 
 def update_contact():
     """
@@ -85,7 +89,11 @@ while True:
         case 2:
             search_contact()
         case 3:
-            delete_contact()
+            confirm = input("are you sure? type y for yes or n for no :").lower()
+            if confirm == "y":
+                delete_contact()
+            else:
+                pass
         case 4:
             display_all_contacts()
         case 5:
