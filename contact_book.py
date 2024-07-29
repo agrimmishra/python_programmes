@@ -16,6 +16,7 @@ def add_contact():
     """
     no_of_contact = int(input("how many contact you want to add?: "))
     for i in range(0,no_of_contact):
+
         name = input(f"Enter  the {i+1} contact's name: ")
         phone = input("Enter the contact's phone number: ")
         email = input("Enter the contact's email address: ") 
