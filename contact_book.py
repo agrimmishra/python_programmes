@@ -14,11 +14,13 @@ def add_contact():
     """
     Add a new contact to the contact book.
     """
-    name = input("Enter the contact's name: ")
-    phone = input("Enter the contact's phone number: ")
-    email = input("Enter the contact's email address: ") 
-    contact_book[name] = {"phone": phone, "email": email}
-    print(f"{name} added successfully.")
+    no_of_contact = int(input("how many contact you want to add?: "))
+    for i in range(0,no_of_contact):
+        name = input("Enter the contact's name: ")
+        phone = input("Enter the contact's phone number: ")
+        email = input("Enter the contact's email address: ") 
+        contact_book[name] = {"phone": phone, "email": email}
+        print(f"{name} added successfully.")
 
 def search_contact():
     """
