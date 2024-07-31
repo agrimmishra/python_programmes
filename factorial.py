@@ -6,5 +6,5 @@ def  factFinder(num):
         num = num*factFinder(num-1)
         return num
     
-
-print(factFinder(45))
+num = int(input("enter number :"))
+print(factFinder(num))
