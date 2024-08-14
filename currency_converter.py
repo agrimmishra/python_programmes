@@ -1,27 +1,64 @@
 def to_USA_dollar(currency):
-    if currency == 0:
-        return 0
-    usd = currency * 0.012
-    return usd
+    """
+    Converts an amount from Indian Rupees (INR) to US Dollars (USD).
+
+    Parameters:
+    currency (float): The amount in Indian Rupees to be converted.
+
+    Returns:
+    float: The equivalent amount in US Dollars.
+    """
+    return currency * 0.012
 
 def to_EURO(currency):
-    if currency == 0:
-        return 0
-    eur = currency * 0.011
-    return eur
+    """
+    Converts an amount from Indian Rupees (INR) to Euros (EUR).
+
+    Parameters:
+    currency (float): The amount in Indian Rupees to be converted.
+
+    Returns:
+    float: The equivalent amount in Euros.
+    """
+    return currency * 0.011
 
 def to_YUAN(currency):
-    if currency == 0:
-        return 0
-    yuan = currency * 0.087
-    return yuan
+    """
+    Converts an amount from Indian Rupees (INR) to Chinese Yuan (CNY).
 
-currency = int(input("Enter Indian currency: "))
+    Parameters:
+    currency (float): The amount in Indian Rupees to be converted.
 
-usd = to_USA_dollar(currency)
-eur = to_EURO(currency)
-yuan = to_YUAN(currency)
+    Returns:
+    float: The equivalent amount in Chinese Yuan.
+    """
+    return currency * 0.087
 
-print(f"{currency} INR is {usd:.2f} USD")
-print(f"{currency} INR is {eur:.2f} EUR")
-print(f"{currency} INR is {yuan:.2f} CNY")
+def main():
+    """
+    Main function to execute currency conversion.
+    """
+    try:
+        # Input amount in Indian Rupees
+        currency = float(input("Enter Indian currency (INR): "))
+
+        # Validate input
+        if currency < 0:
+            print("Amount cannot be negative.")
+            return
+
+        # Perform conversions
+        usd = to_USA_dollar(currency)
+        eur = to_EURO(currency)
+        yuan = to_YUAN(currency)
+
+        # Print results
+        print(f"{currency:.2f} INR is {usd:.2f} USD")
+        print(f"{currency:.2f} INR is {eur:.2f} EUR")
+        print(f"{currency:.2f} INR is {yuan:.2f} CNY")
+
+    except ValueError:
+        print("Invalid input. Please enter a numeric value.")
+
+if __name__ == "__main__":
+    main()
