@@ -1,15 +1,28 @@
-boyNm = input("enter the boy name :")   #taking boys name as a input
-girlNm = input("enter the girl name :")     #taking girl name as a input
-combinedNm = (boyNm+girlNm).lower()
-T = combinedNm.count("t")
-R = combinedNm.count("r")
-U = combinedNm.count("u")
-E = combinedNm.count("e")
-first_digit = T+R+U+E
-L = combinedNm.count("l")
-O = combinedNm.count("o")
-V = combinedNm.count("v")
-E = combinedNm.count("e")
-second_digit = L+O+V+E
+def count_letters(combinedNm, letters):
+    """
+    Counts the total occurrences of specified letters in the combined name string.
 
-print("your love score is "+str(first_digit)+ str(second_digit))
+    Parameters:
+    combinedNm (str): The concatenated string of boy's and girl's names.
+    letters (str): A string containing the letters to count.
+
+    Returns:
+    int: The total count of the specified letters in the combined name string.
+    """
+    return sum(combinedNm.count(letter) for letter in letters)
+
+# Taking names as input
+boyNm = input("Enter the boy's name: ").strip().lower()  # Prompt for the boy's name and normalize
+girlNm = input("Enter the girl's name: ").strip().lower()  # Prompt for the girl's name and normalize
+
+# Combine the names into one string
+combinedNm = boyNm + girlNm
+
+# Calculate the first digit of the love score by counting occurrences of 't', 'r', 'u', 'e'
+first_digit = count_letters(combinedNm, "true")
+
+# Calculate the second digit of the love score by counting occurrences of 'l', 'o', 'v', 'e'
+second_digit = count_letters(combinedNm, "love")
+
+# Print the love score by concatenating the two digits
+print(f"Your love score is {first_digit}{second_digit}")
