@@ -7,8 +7,8 @@ def Binary(list,target):
         mid = (high + low) //2
         if target == list[mid]:
             return mid
-        elif(target>list[mid]):
-            low = mid + 1
+        elif(target>list[mid]):  
+            low = mid+1
         elif target<list[mid]:
             high = mid - 1
     return -1
